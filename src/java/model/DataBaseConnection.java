@@ -10,8 +10,8 @@ public class DataBaseConnection {
     private DataBaseConnection() {
         String db_url = "jdbc:mysql://localhost:3306/tasklist";
         String db_driver = "com.mysql.jdbc.Driver";
-        String db_user = "aplication_user";
-        String db_password = "aplication_password";
+        String db_user = "root";
+        String db_password = "";
         try {
             Class.forName( db_driver );
             connection = DriverManager.getConnection( db_url, db_user, db_password );

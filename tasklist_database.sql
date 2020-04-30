@@ -10,7 +10,3 @@ CREATE TABLE tasks
 	created_at TIMESTAMP default CURRENT_TIME,
 	PRIMARY KEY (id)
 );
-
-CREATE USER 'aplication_user'@'%' IDENTIFIED BY 'aplication_password';
-GRANT ALL PRIVILEGES ON tasklist . * TO 'aplication_user'@'%';
-FLUSH PRIVILEGES;
